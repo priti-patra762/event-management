@@ -1,0 +1,3177 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* overflow: hidden; */
+    
+}
+
+body {
+  padding-top: 80px; }
+
+
+
+.transparent-navbar {
+  background-color: transparent !important;
+  position: fixed;
+  width: 100%;
+  z-index: 1030;
+  top: 0;
+  box-shadow: none;
+  transition: background-color 0.3s ease-in-out;
+}
+
+
+
+
+
+.custom-btn {
+  background-color: #007bff;
+  padding: 8px 12px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #fff;
+
+}
+.navbar .btn{
+    color: black;
+    font-weight: 500;
+    background: transparent;
+    border: none;
+}
+.navbar .btn:hover{
+    color: #007bff;
+}
+.custom-nav{
+  height: 80px;
+    background: #fff;
+    padding: 0px;
+}
+
+.custom-btn:hover {
+  background-color: #0056b3;
+}
+
+.hover-dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0;
+}
+
+.dropdown-menu {
+  display: none;
+  transition: all 0.0s ease;
+}
+
+
+
+
+
+
+ /* yaha se hero section suru hota hai */
+.hero-img {
+  height: 100vh;
+  object-fit: cover;
+  filter: brightness(70%);
+  /* overflow-x: hidden; */
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translateY(50px);
+  opacity: 0;
+  animation: fadeInUp 1.2s ease-out forwards;
+  z-index: 10;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.main-heading {
+  font-size: 3rem;
+  color: white;
+  font-weight: bold;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.small-heading {
+  font-size: 1rem;
+  color: #fff;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+
+.hero-buttons .btn {
+  font-size: 1rem;
+  padding: 10px 20px;
+}
+
+.rating {
+  color: yellow;
+  font-weight: bold;
+}
+
+
+.carousel-item img {
+  height: 80vh;
+  object-fit: cover;
+}
+
+
+/* yaha se stats section suru hota hai  */
+
+.stats-section {
+  background-color: #f5f5f5;
+}
+
+.stat-number {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.stat-label {
+  font-size: 1rem;
+  color: #444;
+  margin: 0;
+}
+.stats-section h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.stats-section p {
+  font-size: 1.1rem;
+  color: #666;
+}
+
+/* yaha se home page ka aboutsec suru hota hai */
+
+.about-section {
+  background-color: #f4f0e8;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.about-section h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.about-section p {
+  color: #444;
+  font-size: 1rem;
+}
+
+
+/* yaha home pahe ka swiper section suru */
+
+
+.photo-text-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 40px;
+  gap: 40px;
+  flex-wrap: wrap;
+  background-color: #f5f5f5;
+}
+
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  flex: 1 1 400px;
+  max-width: 600px;
+}
+
+.image-grid img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+
+.info-box {
+  flex: 1 1 300px;
+  max-width: 450px;
+  background: rgba(26, 26, 26, 0.9);
+  color: #fff;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.info-box h2 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  line-height: 1.4;
+}
+
+.info-box p {
+  font-size: 14.5px;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+
+.btn-group,
+.btn-group .btn,
+.info-box .btn-group {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.expert-btn {
+  background: linear-gradient(45deg, #7b2ff7, #f107a3);
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.whatsapp-btn {
+  background-color: #25D366;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .photo-text-section {
+    flex-direction: column;
+    padding: 30px 20px;
+  }
+
+  .image-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .image-grid img {
+    height: 200px;
+  }
+
+  .info-box {
+    width: 100%;
+  }
+}
+
+/* yaha se  home Ourservice section suru  */
+
+
+.services-section {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: antiquewhite;
+}
+
+.services-heading {
+  font-size: 20px;
+  color: #c29d59;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.services-subheading {
+  font-size: 30px;
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 15px;
+}
+
+.services-description {
+  max-width: 800px;
+  margin: 0 auto 40px;
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+}
+
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  padding: 0 20px;
+}
+
+.service-card {
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.service-card:hover {
+  transform: scale(1.03);
+}
+
+.card-image {
+  position: relative;
+}
+
+.card-image img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+}
+
+
+.card-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.7);
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.4s ease, visibility 0.4s ease;
+}
+
+.service-card:hover .card-hover {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+.card-hover h3 {
+  margin: 0;
+  font-size: 20px;
+}
+
+
+.card-hover p {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #ddd;
+  line-height: 1.4;
+}
+
+
+
+@media (max-width: 992px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+
+
+
+
+/* home page ka slide section suru  */
+
+.testimonial-wrapper {
+  padding: 40px 60px;
+  background-color: #f9f9f9;
+}
+
+.testimonial-card {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  height: 320px;
+  max-height: 320px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin: 0 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.testimonial-text {
+  font-size: 0.95rem;
+  color: #333;
+  margin-bottom: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.read-toggle {
+  color: blue;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.stars {
+  margin-bottom: 10px;
+}
+
+.testimonial-name {
+  font-weight: bold;
+  font-size: 1rem;
+  color: #222;
+  margin: 4px 0 0;
+}
+
+.testimonial-date {
+  font-size: 0.85rem;
+  color: #777;
+}
+
+.slick-slide > div {
+  padding: 0 15px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: #333;
+  font-size: 24px;
+}
+
+
+@media (max-width: 1024px) {
+  .testimonial-wrapper {
+    padding: 20px 30px;
+  }
+
+  .testimonial-card {
+    height: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .testimonial-wrapper {
+    padding: 10px;
+  }
+
+  .testimonial-card {
+    height: auto;
+  }
+}
+
+
+
+/* yaha se home page ka herocontactsection suru  */
+
+.hero-contact-section {
+  padding: 60px 0;
+  color: white;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hero-contact-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto; 
+  padding: 0 30px; 
+  flex-wrap: wrap;
+}
+
+.hero-left {
+  flex: 1;
+  min-width: 300px;
+  max-width: 600px;
+}
+
+.hero-left h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.hero-left p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #ddd;
+}
+
+.hero-right {
+  flex: 1;
+  min-width: 300px;
+  max-width: 500px;
+}
+
+.hero-right form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.hero-right input,
+.hero-right textarea {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.submit-btn {
+  background-color: #a650cf;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #8336a3;
+}
+
+/* yaha se home ka home card section hai  */
+
+.homecard {
+  background-color: rgb(239, 227, 213);
+  padding: 40px;
+}
+
+.homecard-content {
+  padding: 30px;
+  margin: 30px;
+}
+
+.homecard-content p,
+.homecard-content h1,
+.homecard-content h3 {
+  text-align: center;
+}
+
+
+.homecard-card {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap; 
+  gap: 20px;        
+  padding: 10px;
+}
+
+
+.homecard-card .card {
+  width: 300px;
+  background: white;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+
+@media screen and (max-width: 768px) {
+  .homecard-card {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .homecard-card .card {
+    width: 90%; 
+  }
+
+  .homecard-content {
+    padding: 15px;
+  }
+}
+
+
+/* yaha se venueslider suru  */
+
+
+
+
+.venue-container {
+  background-color: #fff;
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.venue-section {
+  background-color: #000;
+  color: #fff;
+  max-width: 1200px;
+  width: 100%;
+  padding: 40px;
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  border-radius: 16px;
+}
+
+.venue-left {
+  flex: 1;
+}
+
+.venue-img-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.img-wrapper {
+  overflow: hidden;
+  transform: translateY(50px);
+  opacity: 0;
+  transition: transform 0.8s ease, opacity 0.8s ease;
+}
+
+.img-wrapper.show {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.img-wrapper img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.img-wrapper img:hover {
+  transform: scale(1.05);
+}
+
+.venue-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.venue-right h2 {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.venue-right p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.venue-right button {
+  background-color: #fff;
+  color: #000;
+  padding: 12px 24px;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  width: fit-content;
+  transition: background 0.3s ease;
+}
+
+.venue-right button:hover {
+  background-color: #ccc;
+}
+
+
+@media (max-width: 768px) {
+  .venue-section {
+    flex-direction: column;
+    padding: 30px 20px;
+  }
+
+  .venue-img-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .img-wrapper img {
+    height: 140px;
+  }
+
+  .venue-right h2 {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 480px) {
+  .venue-img-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .img-wrapper img {
+    height: 160px;
+  }
+}
+
+
+
+/* yaha se home ka clientabout page suru  */
+
+.client-content {
+  background-color: #e5e1b6;
+  padding: 2rem;
+  text-align: center;
+}
+
+.client-content h1 {
+  color: #6f2da8;
+}
+
+.shorts-iframe {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.iframe-wrapper {
+  flex: 1 1 300px;
+  max-width: 360px;
+  aspect-ratio: 9 / 16;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.iframe-wrapper iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 10px;
+}
+
+
+
+
+
+/* yaha se home ka FAq sec suru */
+.faq-section {
+  padding: 40px 20px;
+  background: #f9f9f9;
+}
+.faq-heading {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.faq-box {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.faq-item {
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+}
+.faq-question {
+  background: none;
+  border: none;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+}
+.faq-question .icon {
+  margin-right: 10px;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+.faq-answer {
+  padding: 10px 0 0 25px;
+  color: #333;
+}
+
+
+
+/* yaha se map section suru  */
+
+.map-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  padding: 40px 5%;
+  box-sizing: border-box;
+  gap: 2rem;
+  background: #f8f9fa;
+}
+
+
+.map-container iframe {
+  width: 100%;
+  height: 500px;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+}
+
+
+.map-section {
+  flex: 1;
+  max-width: 50%;
+}
+
+.form-section {
+  flex: 1;
+  max-width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.form-section form {
+  width: 100%;
+  max-width: 450px;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-section input,
+.form-section textarea {
+  padding: 14px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  resize: none;
+}
+
+.submit-btn {
+  padding: 14px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 992px) {
+  .map-container {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .map-section,
+  .form-section {
+    max-width: 100%;
+  }
+
+  .map-container iframe {
+    height: 400px;
+  }
+}
+
+
+
+/* yaha se homevenue section suru  */
+
+/* .slider-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.card {
+  margin: 0 10px;
+}
+
+ */
+
+
+
+
+
+
+
+
+
+
+
+/* yaha se about page ka hero section suru hota hai  */
+
+.about-hero {
+  position: relative;
+  height: 90vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items:last baseline;
+  padding-left: 5%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.hero-text {
+  max-width: 700px;
+  color: white;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.content_section {
+  padding: 30px 15px;
+  background-color: #f8f9fa;
+}
+
+.about_img img {
+  max-height: 400px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+
+
+.question {
+  background-color: #f4f0e8;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.question_box {
+  background-color: white;
+  padding: 20px 30px;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.modal_overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal_box {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 600px;
+  position: relative;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.close_btn {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.form_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.form_grid input {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.radio_group {
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.submit_btn {
+  margin-top: 20px;
+  padding: 12px 25px;
+  background-color: #6f2da8;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  .form_grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+
+/* yaha se about ka blog page suru  */
+
+
+.blog{
+  position: relative;
+  height: 90vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items:last  baseline;
+  padding-left: 5%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.hero-text {
+  max-width: 700px;
+  color: white;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.content_section {
+  padding: 30px 15px;
+  background-color: #f8f9fa;
+}
+
+
+.wedding-img img {
+  max-height: 400px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  
+}
+
+@media (max-width:768px){
+  .overlay{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+  }
+  .hero-text h1{
+    font-size: 2rem;
+  }
+  .hero-text p{
+    font-size: 1rem;
+  }
+}
+
+@media (max-width:480px){
+  .hero-text h1{
+    font-size: 1.5rem;
+  }
+  .hero-text p{
+    font-size: 0.9rem;
+  }
+}
+
+
+.blog-card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  padding: 40px;
+}
+
+.card {
+  width: 100%;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 16px;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 12px;
+}
+
+.custom-btnn {
+  background-color: transparent;
+  border: 2px solid #007bff;
+  color: #007bff;
+  padding: 10px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 14px;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.custom-btnn:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+@media (max-width: 992px) {
+  .blog-card {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .blog-card {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+/* yaha se testimonial page suru */
+
+.testimonial-hero {
+  position: relative;
+  height: 90vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+
+.testimonial-wrapper {
+  padding: 60px 20px;
+  background-color: #fff;
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+}
+
+.section-subtitle {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #888;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.section-title {
+  font-size: 30px;
+  color: #222;
+  margin-bottom: 15px;
+}
+
+.section-description {
+  font-size: 16px;
+  color: #555;
+  max-width: 800px;
+  margin: 0 auto 40px;
+  line-height: 1.6;
+}
+
+
+.youtube {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 20px;
+}
+
+
+.youtube iframe,
+.youtube .video-card {
+  max-width: 100%;
+  flex: 1 1 300px; 
+  min-width: 280px;
+}
+
+
+@media (max-width: 768px) {
+  .youtube {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .youtube iframe,
+  .youtube .video-card {
+    width: 100%;
+  }
+}
+
+
+
+
+/* yaha se service ka wedding page suru */
+
+.wedding{
+  position: relative;
+  height: 90vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items:last baseline;
+  padding-left: 5%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.hero-text {
+  max-width: 700px;
+  color: white;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.content_section {
+  padding: 30px 15px;
+  background-color: #f8f9fa;
+}
+
+
+.wedding-img img {
+  max-height: 400px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  
+}
+
+@media (max-width:768px){
+  .overlay{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+  }
+  .hero-text h1{
+    font-size: 2rem;
+  }
+  .hero-text p{
+    font-size: 1rem;
+  }
+}
+
+@media (max-width:480px){
+  .hero-text h1{
+    font-size: 1.5rem;
+  }
+  .hero-text p{
+    font-size: 0.9rem;
+  }
+}
+
+
+
+.wed-paragraph{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 40px;
+  gap: 30px;
+  background-color: #f9f9f9;
+}
+
+.wed-content{
+  min-width: 300px;
+  flex: 1 1 50%;
+
+}
+.wed-content h1{
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 20px;
+}
+.wed-content p{
+  font-size: 16px;
+  color: #555;
+  line-height: 1.7;
+}
+.wed-img{
+  min-width: 250px;
+  align-items: center;
+  flex: 1 1 35%;
+}
+
+.wed-img img{
+  max-width: 90%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  margin: 0 auto;
+  display: block;
+}
+
+
+
+.image-text-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 30px;
+  padding: 40px;
+  background-color: rgb(209, 195, 178);
+}
+
+.image-box {
+  flex: 1 1 35%;
+  min-width: 250px;
+}
+
+.image-box img {
+  width: 90%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: block;
+  margin: 0 auto;
+}
+
+.text-box {
+  flex: 1 1 50%;
+  min-width: 300px;
+}
+
+
+
+.text-box p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .image-text-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .text-box h2 {
+    font-size: 24px;
+  }
+}
+
+#content {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: auto;
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.8;
+  color: #333;
+}
+
+#content p {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+
+
+.video-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.video-grid iframe {
+  flex: 1 1 45%;
+  max-width: 560px;
+  height: 315px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  border: none;
+}
+
+
+@media (max-width: 768px) {
+  .video-grid iframe {
+    flex: 1 1 100%;
+    max-width: 100%;
+    height: 260px;
+  }
+
+  #content p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .video-grid iframe {
+    height: 220px;
+  }
+}
+
+
+
+.wed-card {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  
+}
+
+.wed-card-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.wed-card-item {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  width: 100%;
+  max-width: 280px;
+  transition: transform 0.3s ease;
+}
+
+.wed-card-item:hover {
+  transform: translateY(-5px);
+}
+
+.card-img-top {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+}
+
+.card-body h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.learn-btn,
+.whatsapp-btn {
+  padding: 8px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.learn-btn {
+  background-color: #e0e0e0;
+}
+
+.learn-btn:hover {
+  background-color: #ccc;
+}
+
+.whatsapp-btn {
+  background-color: #25D366;
+  color: white;
+}
+
+.whatsapp-btn:hover {
+  background-color: #1ebe5b;
+}
+
+
+/* yaha se service ka destination page suru  */
+
+
+.carousel-caption-wrapper {
+  position: absolute;
+  top: 25%;
+  left: 6%;
+  color: white;
+  z-index: 2;
+  max-width: 600px;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.top-line {
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.carousel-caption-wrapper h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 1.3;
+  margin-bottom: 20px;
+}
+
+.hero-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.enquiry-btn {
+  background: linear-gradient(to right, #a44efe, #6e4bfe);
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 30px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.rating-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.avatars {
+  display: flex;
+}
+
+.avatars img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 2px solid white;
+  margin-left: -10px;
+}
+
+.rating {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: white;
+}
+
+
+.why-kerala-section {
+  background-color: #f7f5fa;
+  padding: 60px 20px;
+}
+
+.why-kerala-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: rgb(191, 203, 157);
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.08);
+  padding: 30px;
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.kerala-img img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 12px;
+  transition: transform 0.4s ease;
+}
+
+.kerala-img img:hover {
+  transform: scale(1.05);
+}
+
+.kerala-text {
+  flex: 1;
+}
+
+.kerala-text h5 {
+  color: #999;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.kerala-text h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.kerala-text p {
+  color: #444;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.kerala-buttons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.expert-btn {
+  background: #a873f2;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.whatsapp-btn {
+  background: #25D366;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+.dest-content{
+margin: 50px;
+padding: 20px;
+}
+.dest-content h1{
+  margin: 10px;
+  padding: 10px;
+}
+.dest-content p{
+  margin: 10px;
+  padding: 10px;
+}
+
+
+.video-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 1rem;
+}
+
+.video-wrapper iframe {
+  width: 90%;
+  max-width: 900px;
+  height: 500px;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 768px) {
+  .video-wrapper iframe {
+    height: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .video-wrapper iframe {
+    height: 200px;
+  }
+}
+
+.best-season-section {
+  padding: 60px 20px;
+  text-align: center;
+  background: #fff;
+  margin: 40px;
+}
+
+.certification {
+  color: #b08400;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.section-title {
+  margin: 15px 0 40px;
+  font-size: 26px;
+  color: #333;
+}
+
+.season-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  justify-content: center;
+}
+
+.season-card {
+  background: #1b1b1b;
+  color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: left;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.dark-card {
+  background-color: #111;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.expert-btn-wrapper {
+  margin-top: 15px;
+}
+
+.expert-btn {
+  background-color: #7048e8;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.expert-btn:hover {
+  background-color: #5e3fc8;
+}
+
+
+.modal_overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal_box {
+  background: #fff;
+  padding: 30px;
+  max-width: 600px;
+  width: 90%;
+  border-radius: 10px;
+  position: relative;
+  text-align: left;
+}
+
+.close_btn {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  border: none;
+  background: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.form_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.form_grid input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.radio_group {
+  margin-bottom: 15px;
+}
+
+.submit_btn {
+  background: #7048e8;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+
+
+
+
+
+/* yaha se corporate service ka suru  */
+
+.corporate-content {
+  padding: 30px 20px;
+  margin: 20px auto;
+  max-width: 1200px;
+  box-sizing: border-box;
+}
+
+.corporate-content h1,
+.corporate-content h3 {
+  padding: 10px 0;
+  margin: 10px 0;
+  color: #222;
+  font-weight: 600;
+  line-height: 1.3;
+  text-align: center;
+}
+
+.corporate-content p {
+  padding: 10px 0;
+  margin: 10px 0;
+  line-height: 1.6;
+  font-size: 16px;
+  text-align: justify;
+  color: #333;
+}
+
+.corporate-content img {
+  display: block;
+  margin: 20px auto;
+  padding: 10px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+
+@media (max-width: 768px) {
+  .corporate-content {
+    padding: 20px 15px;
+    margin: 15px;
+  }
+
+  .corporate-content h1 {
+    font-size: 22px;
+  }
+
+  .corporate-content h3 {
+    font-size: 18px;
+  }
+
+  .corporate-content p {
+    font-size: 15px;
+  }
+}
+
+
+/* yaha se service ka photography section suru  */
+
+.wedding-budget-section {
+  background-color: #fff8f3;
+  padding: 60px 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.main-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.main-subtitle {
+  font-size: 16px;
+  color: #555;
+  max-width: 800px;
+  margin: 0 auto 40px;
+}
+
+.step-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.step-box {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 30px 20px;
+  position: relative;
+  text-align: left;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+}
+
+.step-number {
+  background-color: #7b4ce0;
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 5px 12px;
+  border-radius: 20px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.step-title {
+  margin-top: 40px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.step-desc {
+  margin-top: 10px;
+  font-size: 15px;
+  color: #444;
+}
+
+.cta-button {
+  margin-top: 40px;
+}
+
+.talk-button {
+  background-color: #7b4ce0;
+  color: white;
+  padding: 12px 30px;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.talk-button:hover {
+  background-color: #6839c0;
+}
+
+@media (min-width: 768px) {
+  .step-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .step-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .step-box {
+    height: 100%;
+  }
+}
+
+
+.why-section {
+  padding: 40px 20px;
+  background: #fff;
+  text-align: center;
+}
+
+.why-title h2 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.why-title p {
+  max-width: 700px;
+  margin: 0 auto 30px;
+  color: #444;
+}
+
+.why-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.why-card {
+  background: #b1bf75;
+  border-radius: 10px;
+  width: 300px;
+  padding: 20px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  text-align: left;
+  transition: 0.3s;
+}
+
+.why-card:hover {
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.why-icon {
+  background: #7b3aed;
+  color: white;
+  font-size: 18px;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 35px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.why-card h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.why-card p {
+  font-size: 14px;
+  color: #555;
+}
+
+
+@media screen and (max-width: 768px) {
+  .why-card {
+    width: 100%;
+    max-width: 95%;
+  }
+}
+.counter-section {
+  background-color: #f2f2f2;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.counter-wrapper {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.counter-box {
+  flex: 1;
+  min-width: 250px;
+  background: white;
+  padding: 30px 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s;
+}
+
+.counter-box:hover {
+  transform: translateY(-6px);
+}
+
+.counter-box h2 {
+  font-size: 36px;
+  color: #6a1b9a;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.counter-box p {
+  font-size: 16px;
+  color: #555;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* yaha catrin page suru  */
+
+.catrin-menu{
+  background: linear-gradient(90deg,rgb(201, 152, 160),white);
+  padding: 50px;
+  
+}
+.catrin-content{
+  /* justify-content: center;
+  align-items: center; */
+  padding: 10px;
+}
+.catrin-content h1{
+   text-align: center;
+
+}
+.catrin-content p{
+  text-align: center;
+}
+
+.catrin-card{
+  display: flex;
+  justify-content: space-evenly;
+  margin: 30px;
+}
+
+#card{
+  height: 420px;
+  width: 320px;
+}
+
+#card img{
+  padding: 15px;
+  border-radius: 10px;
+}  
+
+
+@media (max-width: 992px) {
+  .catrin-card {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  #card {
+    width: 90%;
+    max-width: 320px;
+  }
+}
+
+@media (max-width: 576px) {
+  .catrin-menu {
+    padding: 30px 10px;
+  }
+
+  .catrin-content h1 {
+    font-size: 1.4rem;
+  }
+
+  .catrin-content p {
+    font-size: 0.95rem;
+  }
+
+  .catrin-card {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #card {
+    width: 95%;
+  }
+}
+
+
+
+.catering-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 40px 60px;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.catering-text {
+  flex: 1;
+  min-width: 320px;
+}
+
+.catering-text h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+  line-height: 1.4;
+}
+
+.catering-text p {
+  margin-bottom: 16px;
+  color: #444;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.cta-buttons {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.talk-btn {
+  background-color: #6c63ff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 30px;
+}
+
+.whatsapp-btn {
+  background-color: #25d366;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 30px;
+}
+
+.catering-image {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+}
+
+.catering-image img {
+  max-width: 100%;
+  height: 500px;
+  border-radius: 10px;
+}
+
+
+@media (max-width: 768px) {
+  .catering-section {
+    flex-direction: column;
+    padding: 30px 20px;
+  }
+
+  .catering-text h2 {
+    font-size: 24px;
+  }
+
+  .catering-text p {
+    font-size: 15px;
+  }
+
+  .cta-buttons {
+    justify-content: flex-start;
+  }
+}
+
+
+.factors-section {
+  padding: 50px 20px;
+  background: rgb(253, 255, 252);
+}
+
+.factors-heading {
+  text-align: center;
+  max-width: 800px;
+  margin: auto;
+}
+
+.factors-heading h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.factors-heading p {
+  font-size: 16px;
+  color: #555;
+}
+
+.factors-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.factor-card {
+  background: #e6ebc6;
+  border-radius: 12px;
+  padding: 20px;
+  width: 30%;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  box-sizing: border-box;
+  transition: transform 0.3s ease;
+}
+
+.factor-card:hover {
+  transform: translateY(-5px);
+}
+
+.factor-card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.factor-card p {
+  font-size: 14px;
+  color: #666;
+}
+
+
+@media (max-width: 992px) {
+  .factor-card {
+    width: 45%;
+  }
+}
+
+@media (max-width: 600px) {
+  .factor-card {
+    width: 100%;
+  }
+}
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; 
+  height: 0;
+  overflow: hidden;
+  max-width: 900px;
+  margin: 50px auto; 
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* yaha se beach page suru  */
+
+
+.wedding-section {
+  padding: 40px 20px;
+}
+
+.wedding-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+  gap: 30px;
+}
+
+.wedding-image {
+  flex: 1 1 45%;
+}
+
+.wedding-image img {
+  width: 400px;
+  height: 600px;
+  border-radius: 8px;
+}
+
+.wedding-content {
+  flex: 1 1 50%;
+}
+
+.wedding-content h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.wedding-content p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+
+@media (max-width: 768px) {
+  .wedding-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .wedding-content h2 {
+    font-size: 20px;
+  }
+}
+
+
+
+
+
+
+
+/* yaha se home ka map section suru  */
+
+
+.map-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding: 2rem;
+}
+
+.hero-right form input,
+.hero-right form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.submit-btn {
+  padding: 10px;
+  background-color: #4f2546;
+  color: white;
+  border: none;
+}
+
+
+
+/* yaha se venue page ka sections suru  */
+
+.venue-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 60px;
+  gap: 40px;
+}
+
+.venue-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.venue-text h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.venue-text p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.venue-image {
+  flex: 1;
+  min-width: 300px;
+  text-align: right;
+}
+
+.venue-image img {
+  width: 400px;
+  max-width: 500px;
+  height: 600px;
+  border-radius: 12px;
+}
+
+
+@media screen and (max-width: 768px) {
+  .venue-content {
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .venue-text,
+  .venue-image {
+    text-align: center;
+  }
+
+  .venue-text h1 {
+    font-size: 24px;
+  }
+
+  .venue-text p {
+    font-size: 16px;
+  }
+
+  .venue-image img {
+    max-width: 100%;
+  }
+}
+
+
+
+
+
+
+/* yaha se gallery ka photos section suru  */
+
+
+
+.glry-photos {
+  position: relative;
+  width: 100%;
+  height: 90vh;
+  overflow: hidden;
+}
+
+.gallery-bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(60%);
+}
+
+.gallery-content {
+  position: absolute;
+  left: 10%;
+  bottom: 10%;
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: bold;
+  animation: slideUp 1s ease-out;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(60%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+.photo-section-box {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: auto;
+  text-align: center;
+}
+
+.photo-section-box p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #444;
+  margin-bottom: 2rem;
+}
+
+.category-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.category-buttons button {
+  padding: 0.6rem 1.2rem;
+  background-color: #b36bdb;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.category-buttons button:hover {
+  background-color: #b9311e;
+}
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.photo-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.photo-item img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* .photo-item {
+  opacity: 0;
+  transform: scale(0.95);
+  animation: fadeInZoom 0.6s ease forwards;
+}
+
+@keyframes fadeInZoom {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+} */
+
+
+
+/* yaha se gallery ka video section suru */
+
+.about-video {
+  position: relative;
+  width: 100%;
+  height: 100vh; 
+  overflow: hidden;
+}
+
+.hero-bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.9; 
+  z-index: 1;
+}
+
+.overlay-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-text-video {
+  color: rgb(32, 2, 2);
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* yaha se contact section suru  */
+
+.contact-main {
+  padding: 50px 20px;
+  background-color: #fff;
+}
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  gap: 30px;
+}
+
+.contact-left {
+  flex: 1;
+  min-width: 300px;
+}
+
+.contact-left h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.phone-label,
+.email-label {
+  font-weight: 500;
+  margin: 20px 0 5px;
+}
+
+.talk-button {
+  display: flex;
+  align-items: center;
+  background-color: #5d3b94;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  font-weight: bold;
+  margin-bottom: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.talk-button .icon {
+  margin-right: 10px;
+}
+
+.email {
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  font-size: 22px;
+  
+}
+
+.social-icons svg {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.social-icons svg:hover {
+  transform: scale(1.2);
+}
+
+
+.social-icons svg:nth-child(1) { color: #E1306C; } 
+.social-icons svg:nth-child(2) { color: #FF0000; } 
+.social-icons svg:nth-child(3) { color: #1877F2; } 
+.social-icons svg:nth-child(4) { color: #0077B5; } 
+.social-icons svg:nth-child(5) { color: #1DA1F2; } 
+
+
+
+.contact-right {
+  flex: 1;
+  min-width: 300px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.submit-btn {
+  background-color: #5d3b94;
+  color: white;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+.map-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 30px 20px;
+}
+
+.map-box {
+  flex: 1 1 300px;  
+  max-width: 400px;
+  min-width: 280px;
+  height: 300px;
+  border: 0;
+  border-radius: 10px;
+}
+
+
+
+
+/* yaha footer part hai  */
+
+.footer {
+  position: relative;
+  background-image: url(assets/images/footer_img.avif);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  padding: 40px 20px;
+  overflow: hidden;
+}
+
+.footer_img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8); 
+  z-index: 1;
+}
+
+
+.footer_content {
+  position: relative;
+  z-index: 2;
+  color: white;
+  max-width: 1200px;
+  margin: auto;
+}
+
+
+.footer_logo {
+  text-transform: uppercase;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.footer_logo span {
+  display: block;
+  font-size: 16px;
+  font-weight: normal;
+  color: #ccc;
+}
+
+
+.footer_description {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+
+.footer_icon {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  color: white;
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+.footer_icon span {
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.footer_icon span:hover {
+  color: #f9c74f; 
+  transform: scale(1.2);
+}
+
+
+.footer_links {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.footer_column {
+  flex: 1 1 22%;
+  min-width: 200px;
+}
+
+.footer_column h4 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+}
+
+.footer_column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer_column ul li {
+  font-size: 14px;
+  margin-bottom: 6px;
+  color: #ddd;
+  /* transition: color 0.3s ease, transform 0.2s ease;
+  cursor: pointer; */
+}
+
+/* .footer_column ul li:hover {
+  color: #ffffff;
+  transform: translateX(5px);
+}
+ */
+
+
+.footer_bottom {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ccc;
+  font-size: 14px;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+
+@media (max-width: 992px) {
+  .footer_links {
+    justify-content: center;
+  }
+
+  .footer_column {
+    flex: 1 1 45%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer_logo {
+    font-size: 26px;
+  }
+
+  .footer_description {
+    font-size: 13px;
+  }
+
+  .footer_icon {
+    font-size: 28px;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+
+  .footer_column {
+    flex: 1 1 100%;
+    text-align: center;
+  }
+
+  .footer_bottom {
+    flex-direction: column;
+    font-size: 13px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer_description {
+    font-size: 12px;
+  }
+
+  .footer_column h4 {
+    font-size: 14px;
+  }
+
+  .footer_column ul li {
+    font-size: 12px;
+  }
+
+  .footer_icon {
+    font-size: 24px;
+    gap: 12px;
+  }
+}
+
+
+
+
+
+/* whatsapp icon  */
+
+.scanner_div {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 120px;
+  height: auto;
+  border-radius: 10px;
+  /* background-color: white;  */
+  overflow: hidden;
+  text-align: center;
+  /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); */
+  z-index: 10;
+  padding: 10px;
+}
+
+
+.scanner img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+
+/* .scanner_div p {
+  font-size: 16px;
+  margin-top: 8px;
+  color: #333;
+} */
+
+
+@media (max-width: 768px) {
+  .scanner_div {
+    width: 140px;
+    right: 10px;
+    padding: 8px;
+  }
+
+  /* .scanner_div p {
+    font-size: 14px;
+  } */
+}
+
+
+@media (max-width: 480px) {
+  .scanner_div {
+    width: 120px;
+    right: 8px;
+    bottom: 15px;
+    padding: 6px;
+  }
+
+  /* .scanner_div p {
+    font-size: 13px;
+  } */
+}
+
+
