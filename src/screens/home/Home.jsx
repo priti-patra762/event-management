@@ -3,7 +3,7 @@ import React from "react";
 import Header from "../../components/Header";
 import Hero from "../../components/Hero";
 import Stats from "../../components/Stats";
-import AboutSec from "../../components/Aboutsec";
+import AboutSec from "../../components/AboutSec";
 import Swipe from "../../components/Swipe";
 import Ourservice from "../../components/Ourservice";
 import Slide from "../../components/Slide";
